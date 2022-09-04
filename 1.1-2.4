@@ -1,0 +1,240 @@
+#include <iostream>
+
+using namespace std;
+
+//int g_a = 10;
+//int g_b = 10;
+//
+//const int c_g_a = 10;
+//const int c_g_b = 10;
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 10;
+//	const int c_l_a = 10;
+//	const int c_l_b = 10;
+//	static int s_a = 10;
+//	static int s_b = 10;
+//
+//	cout << (int)&g_a << endl;
+//	cout << (int)&g_b << endl;
+//	cout << (int)&c_g_a << endl;
+//	cout << (int)&c_g_b << endl;
+//	cout << (int)&a << endl;
+//	cout << (int)&b << endl;
+//	cout << (int)&c_l_a << endl;
+//	cout << (int)&c_l_b << endl;
+//	cout << (int)&s_a << endl;
+//	cout << (int)&s_b << endl;
+//
+//
+//
+//	return 0;
+//}
+
+//int* func()
+//{
+//	int a = 10;
+//	return &a;
+//}
+//
+//int main()
+//{
+//	int* p = func();
+//	cout << *func() << endl;
+//	cout << func() << endl;
+//	//cout << a << endl;
+//	cout << *p << endl;
+//	cout << p << endl;
+//
+//	return 0;
+//}
+
+//int* func()
+//{
+//	int* a = new int(10);
+//	return a;
+//}
+//
+//int* func1()
+//{
+//	int b = 10;
+//	return &b;
+//}
+//int main()
+//{
+//	cout << func() << endl;
+//	int* p = func();
+//	cout << *p << endl;
+//	cout << func() << endl;
+//	cout << func() << endl;
+//	cout << func1() << endl;
+//	cout << func1() << endl;
+//	cout << p << endl;
+//	cout << p << endl;
+//
+//	return 0;
+//}
+
+//int* func()
+//{
+//	int* a = new int(10);
+//	return a;
+//}
+//
+//int main()
+//{
+	//int* p = func();
+
+	//cout << &*p << endl;
+	//cout << &*p << endl;
+	//cout << *p << endl;
+	//cout << *p << endl;
+	//cout << p << endl;
+	//cout << p << endl;
+	//cout << func() << endl;
+	//cout << func() << endl;
+
+	//delete p;
+	//cout << p << endl;
+	//cout << p << endl;
+	//cout << p << endl;
+
+	//int* arr = new int[10];
+
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	arr[i] = i + 100;
+	//}
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	cout << arr[i] << endl;
+	//}
+	//cout << arr << endl;
+	//cout << arr << endl;
+	//cout << arr << endl;
+	//delete[] arr;
+	//new是先找地址再赋值！
+
+
+	//int a = 10;
+	//int& b = a;
+
+	//cout << a << endl;
+	//cout << b << endl;
+	//b = 100;
+	//cout << a << endl;
+	//cout << b << endl;
+	//int& c = a;
+	//c = 300;
+	//cout << a << endl;
+	//cout << b << endl;
+	//cout << c << endl;
+
+//
+//
+//
+//
+//	return 0;
+//}
+
+//int* func()
+//{
+//	int a = 10;
+//	return &a;
+//}
+//
+//int main() {
+//
+//	int* p = func();
+//
+//	cout << *p << endl;
+//	cout << p << endl;
+//	cout << func() << endl;
+//	cout << func() << endl;
+//	cout << func() << endl;
+//
+////	system("pause");
+//
+//	return 0;
+//}
+
+//void swap1(int a, int b)
+//{
+//	int temp = a;
+//	a = b;
+//	b = temp;
+//}
+//void swap2(int* a, int* b)
+//{
+//	int temp = *a;
+//	*a = *b;
+//	*b = temp;
+//}
+//void swap3(int& a, int& b)
+//{
+//	int temp = a;
+//	a = b;
+//	b = temp;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	cout << &a << " " << &b << endl;
+//	swap1(a, b);
+//	cout << "a = " << a << " " << "b = " << b << endl;
+//	cout << &a << " " << &b << endl;
+//	swap2(&a, &b);
+//	cout << "a = " << a << " " << "b = " << b << endl;
+//	cout << &a << " " << &b << endl;
+//	swap3(a, b);
+//	cout << "a = " << a << " " << "b = " << b << endl;
+//	cout << &a << " " << &b << endl;
+//	return 0;
+//}
+//
+//int& local()
+//{
+//	int a = 10;
+//	return a;
+//}
+//int& local2()
+//{
+//	static int a = 20;
+//	return a;
+//}
+//int& test01() {
+//	int a = 10; //局部变量
+//	return a;
+//}
+//int main()
+//{
+//	int& ref = local();
+//	cout  << ref << endl;
+//	cout << "ref = " << ref << endl;
+//	int& ref1 = test01();
+//	cout << "ref1 = " << ref1 << endl;
+//	cout << "ref1 = " << ref1 << endl;
+//
+//	return 0;
+//}
+
+//发现是引用，转换为 int* const ref = &a;
+void func(int& ref) {
+	ref = 100; // ref是引用，转换为*ref = 100
+}
+int main() {
+	int a = 10;
+
+	//自动转换为 int* const ref = &a; 指针常量是指针指向不可改，也说明为什么引用不可更改
+	int& ref = a;
+	ref = 20; //内部发现ref是引用，自动帮我们转换为: *ref = 20;
+
+	cout << "a:" << a << endl;
+	cout << "ref:" << ref << endl;
+
+	func(a);
+	return 0;
+}
