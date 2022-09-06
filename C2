@@ -1,0 +1,185 @@
+//#include <iostream>
+//using namespace std;
+//
+////int main()
+////{
+////	//int a = 10;
+////	//int* p = &a;
+////	//cout << p << endl;
+////	//cout << sizeof(p) << endl;
+////
+////	//cout << "Hello, World" << endl;
+////#pragma region Ex1
+////	cout << "Ex1" << endl;
+////	cout << "Hello,World";
+////#pragma endregion
+////
+////#pragma region Ex2
+////	cout << endl << "Ex2" << endl;
+////	int a, b;
+////	cout << "Enter Two Number: ";
+////	cin >> a >> b;
+////	cout << "a * b = " << a * b;
+////#pragma endregion
+////
+////#pragma region Ex3
+////	cout << endl << "Ex3" << endl;
+////	cout << "This is" << "a" << "very" << "long sentence." << endl;
+////	cout << "This is";
+////	cout << "a";
+////	cout << "very";
+////	cout << "long sentence.";
+////	cout << endl;
+////#pragma endregion
+////
+////	system("pause");
+////	return 0;
+////
+////	return 0;
+////}
+//int reused = 42;
+//int main()
+//{
+//	//int sum = 0, v = 0;
+//	//while (cin >> v)
+//	//{
+//	//	sum += v;
+//	//}
+//	//cout << sum;
+//	unsigned u = 10;
+//	int i = -42;
+//	cout << u + i << endl;
+//
+//	unsigned u2 = 42;
+//	cout << u - u2 << endl;
+//	cout << u2 - u << endl;
+//
+//	for (unsigned i =10; i >=10; i--)
+//	{
+//		cout << i << endl;
+//	}cout << sizeof(float) << endl;
+//
+//	cout << "Hell\0o" "World\0!";
+//	cout << reused << endl;
+//	int reused = 33;
+//	cout << reused << endl;
+//	cout << reused << endl;
+//	cout << ::reused << endl;
+//
+//	int a = 5, & b = a;
+//	int& c = b;
+//	int& d = b;
+//	int* name0, * name1, * name2;
+//	int ival = 3;
+//	int* p = &ival;
+//	cout << p << " " << *p << endl;
+//	*p = 0;
+//	cout << p << " " << *p << endl;
+//
+//	int* p1 = nullptr;
+//	int* p2 = 0;
+//	int* p3 = NULL;
+//	cout << p1 << endl;
+//	cout << p2 << endl;
+//	cout << p3 << endl;
+//
+//	double obj = 3.14, * pd = &obj;
+//	void* pv = &obj;
+//	cout << pd << endl;
+//	cout << pv << endl;
+//	cout << &pd << endl;
+//	cout << &pv << endl;
+//
+//	int ii = 1024;
+//	int* p11 = &ii;
+//	int** p111 = &p11;
+//	cout << ii << endl;
+//	cout << *p11 << endl;
+//	cout << p11 << endl;
+//	cout << **p111 << endl;
+//
+//	//int i3 = 42;
+//	//int* p3 = nullptr;
+//	//int*& r3 = p3;
+//	//r3 = &i3;
+//	//*r3 = 0;
+//	//cout << r3 << endl;
+//	//double pi = 3.14;
+//	//const int& r_pi = pi;
+//	//cout << r_pi << endl;
+//	//pi = 2.0;
+//	//cout << r_pi << endl;
+//
+//	//getchar();
+//
+//	unsigned u = 10, u2 = 42;
+//	cout << u - u2 << endl;
+//	cout << u2 - u << endl;
+//	int i = 10, i2 = 42;
+//	cout << i - i2 << endl;
+//	cout << i2 - i << endl;
+//	cout << i - u << endl;
+//	cout << u - i << endl;
+//
+//
+//
+//
+//	
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//	return 0;
+//}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//unsigned u = 10, u2 = 42;
+	//cout << u - u2 << endl;
+	//cout << u2 - u << endl;
+	//int i = 10, i2 = 42;
+	//cout << i - i2 << endl;
+	//cout << i2 - i << endl;
+	//cout << i - u << endl;
+	//cout << u - i << endl;
+
+	//int i, & ri = i;
+	//i = 5; ri = 10;
+	//cout << i << ri << endl;
+	//cout << &i << &ri << endl;
+
+	//int val = 5, *p = NULL;
+	//p = &val;
+
+	//cout << *p << val;
+	//*p = 10;
+	//cout << *p << val;
+	//val = 33;
+	//cout << *p << val;
+
+	//int i = 42;
+	//int* p = &i;
+	//cout << *p * *p;
+
+	const int v2 = 0; 
+	int v1 = v2;
+	int* p1 = &v1, & r1 = v1;
+	const int* p2 = &v2, * const  p3 = &i;
+
+
+
+
+	return 0;
+}
