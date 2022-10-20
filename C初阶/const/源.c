@@ -14,7 +14,7 @@ int main()
 
 	const float  pai = 3.14f;
 	//pai = 5.14;
-
+	N
 #define MAX 100;
 	//printf("%d\n", MAX);
 	printf("max = %d\n", MAX);
