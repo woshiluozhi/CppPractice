@@ -1,19 +1,16 @@
-#define _CRT_SECURE_NO_WARNINGS 1
-
-void menu()
-{
-	printf("************************");
-	printf("*******1.play************");
-	printf("*******0.exit************");
-	printf("************************");
-}
+#include "game.h"
 
 int main()
 {
+	int input = 0;
 	do
 	{
-		menu();
-	} while (true);
+		menu(); 
+		scanf("%d", &input);
+
+
+		playgame();
+	} while (input);
 
 	return 0;
 }
