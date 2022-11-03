@@ -56,17 +56,56 @@
 //	}
 //	return ret;
 //}
-int missingNumber(int* nums, int numSize)
+//int missingNumber(int* nums, int numSize)
+//{
+//	int N = numsSize;
+//	int x = 0;
+//	for (int i = 0; i < numsSize; i++)
+//	{
+//		x ^= nums[i];
+//	}
+//	for (size_t j = 0; j < N + 1; j++)
+//	{
+//		x ^= j;
+//	}
+//	return x;
+//}
+
+//void reverse(int* nums, int numsSize, int k)
+//{
+//	while (k--)
+//	{
+//		int ret = nums[numsSize - 1];
+//		for (int i = 0; i < numsSize; i++)
+//		{
+//			nums[i] = nums[i - 1];
+//		}
+//		nums[0] = ret;
+//	}
+//}
+
+void reverse(int* nums, int numsSize, int k)
 {
-	int N = numsSize;
-	int x = 0;
-	for (int i = 0; i < numsSize; i++)
+	k %= numsSize;//防止k过大,循环多次
+
+	int tmp[numsSize];
+
+	int j = 0;
+	for (int i = numsSize - k; i < numsSize; i++) //后k个拷贝
 	{
-		x ^= nums[i];
+		tmp[j] = nums[i];
+		j++;
 	}
-	for (size_t j = 0; j < N + 1; j++)
+
+	for (int i = 0; i < numsSize - k; i++) //前n-k个拷贝
 	{
-		x ^= j;
+		tmp[j] = nums[i];
+		j++;
 	}
-	return x;
+
+	for (int i = 0; i < numsSize; i++)//拷贝回去
+	{
+		nums[i] = tmp[i];
+	}
+
 }
