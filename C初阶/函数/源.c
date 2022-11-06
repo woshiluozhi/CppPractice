@@ -410,7 +410,7 @@ void three_line()
 //print(12) 3 4
 //print(1) 2 3 4
 //1 2 3 4
-//
+
 
 
 //void print(unsigned int n)//1234
@@ -424,21 +424,21 @@ void three_line()
 //	}
 //}
 
-//void print(unsigned int n)
-//{
-//	if (n > 9)
-//	{
-//		print(n / 10);
-//	}
-//	printf("%d ", n % 10);
-//}
-//
-//int main()
-//{
-//	unsigned int num = 0;
-//	scanf("%u", &num);//1
-//	print(num);//按照顺序打印num的每一位
+void print(unsigned int n)
+{
+	if (n > 9)
+	{
+		print(n / 10);
+	}
+	printf("%d ", n % 10);
+}
 
+int main()
+{
+	unsigned int num = 0;
+	scanf("%u", &num);//1
+	print(num);//按照顺序打印num的每一位
+}
 
 	//while (num)
 	//{
