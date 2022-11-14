@@ -77,21 +77,21 @@
 //}
 
 
-int main()
-{
-	//char arr[10] = { 1,2,3,4,5,6,7,8,9,10};
-	////0~9
-	//int i = 0;
-	//int sz = sizeof(arr) / sizeof(arr[0]);
-	//for (i = 0; i < sz; i++)
-	//{
-	//	printf("&arr[%d] = %p\n", i, &arr[i]);
-	//}
-
-	char arr[20000] = {0};
-
-	return 0;
-}
+//int main()
+//{
+//	//char arr[10] = { 1,2,3,4,5,6,7,8,9,10};
+//	////0~9
+//	//int i = 0;
+//	//int sz = sizeof(arr) / sizeof(arr[0]);
+//	//for (i = 0; i < sz; i++)
+//	//{
+//	//	printf("&arr[%d] = %p\n", i, &arr[i]);
+//	//}
+//
+//	char arr[20000] = {0};
+//
+//	return 0;
+//}
 
 
 
@@ -100,7 +100,7 @@ int main()
 //int main()
 //{
 //	//int arr[3][4] = {1,2,3,4,5};
-//	//int arr[3][4] = { {1,2},{3,4},{5} };
+//	//int arr2[3][4] = { {1,2},{3,4},{5} };
 //	//double arr1[5][6];
 //
 //	//对于二维数组，初始化时，可以省略掉行，但是不能省略掉列
@@ -109,26 +109,14 @@ int main()
 //	//3 4 0 0
 //	//5 0 0 0
 //	int arr[3][4] = { {1,2},{3,4},{5} };
-//	int j = 0;
-//	for (j = 0; j < 4; j++)
+//	for (int i = 0; i < 3; i++)
 //	{
-//		int i = 0;
-//		for (i = 0; i < 3; i++)
+//		for (int j = 0; j < 4; j++)
 //		{
-//			printf("%d ", arr[i][j]);
+//			printf("&arr[%d][%d] = %p\n", i, j, &arr[i][j]);
 //		}
 //		printf("\n");
 //	}
-//	//int i = 0;
-//	//for (i = 0; i < 3; i++)
-//	//{
-//	//	int j = 0;
-//	//	for (j = 0; j < 4; j++)
-//	//	{
-//	//		printf("%d ", arr[i][j]);
-//	//	}
-//	//	printf("\n");
-//	//}
 //
 //	return 0;
 //}
@@ -156,7 +144,7 @@ int main()
 //	//0~9
 //	int i = 0;
 //
-//	for (i = 0; i < 10; i++)
+//	for (i = 0; i <= 10; i++)
 //	{
 //		printf("%d ", arr[i]);
 //	}
@@ -182,6 +170,26 @@ int main()
 //
 //	return 0;
 //}
+
+
+int main()
+{
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//int* p = &arr[0];
+	//int* p = arr;
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	printf("%p = %d = %p = %d = %p = %d\n", p + i, *(p + i), &arr[i], arr[i], arr + i, *(arr + i));
+	//}
+	printf("%p\n", arr);
+	printf("%p\n", arr + 1);
+	printf("%p\n", &arr[0]);
+	printf("%p\n", &arr[0] + 1);
+	printf("%p\n", &arr);
+	printf("%p\n", &arr + 1);
+
+	return 0;
+}
 
 //冒泡排序
 //选择排序
