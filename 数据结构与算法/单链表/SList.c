@@ -54,7 +54,7 @@ void SLTPrint(SLTNode* phead)
 	printf("NULL\n");
 }
 
-// ÐÝÏ¢17:14¼ÌÐø
+
 void SLTPushBack(SLTNode** pphead, SLTDataType x)
 {
 	SLTNode* newnode = BuySLTNode(x);
