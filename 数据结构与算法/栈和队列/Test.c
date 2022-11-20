@@ -20,9 +20,11 @@ void TestStack1()
 	StackPop(&st);
 	StackPop(&st);
 	StackPop(&st);
-	StackPop(&st);
+	//StackPop(&st);
 	//StackPop(&st);
 
+	printf("%d\n", StackSize(&st));
+	printf("%d\n", st.top);
 	printf("%d\n", StackTop(&st));
 }
 
