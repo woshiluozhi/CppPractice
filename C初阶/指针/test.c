@@ -2,38 +2,40 @@
 
 #include <stdio.h>
 
+// Part. I
+// 
+
 //int main()
 //{
-//	int a = 1000;
+//	int a = 10;
 //	char ch;
 //	int * pa = &a;
 //	*pa = 20;//解引用操作符（间接访问操作符）
 //	printf("%d\n", a);
-//	char * pc = &ch;
+//	//char * pc = &ch;
 //
-//	printf("%d\n", sizeof(pa));
-//	printf("%d\n", sizeof(pc));
+//	//printf("%d\n", sizeof(pa));
+//	//printf("%d\n", sizeof(pc));
 //
-//	printf("%p\n",  &a);
+//	//printf("%p\n",  &a);
 //	return 0;
 //}
 
 
-int main()
-{
-	int* pa;
-	char* pc;
-	float* pf;
-
-	//ptr_t p;
-
-	printf("%d\n", sizeof(pa));
-	printf("%d\n", sizeof(pc));
-	printf("%d\n", sizeof(pf));
-
-	return 0;
-}
+//int main()
+//{
+//	int* pa;
+//	char* pc;
+//	float* pf;
 //
+//	printf("%d\n", sizeof(pa));
+//	printf("%d\n", sizeof(pc));
+//	printf("%d\n", sizeof(pf));
+//
+//	return 0;
+//}
+
+
 //int main()
 //{
 //	int a = 0x11223344;
@@ -65,28 +67,28 @@ int main()
 
 //int main()
 //{
-//	int arr[10] = { 0 };
-//	int* p = arr;//数组名就是数组首元素的地址arr->&arr[0];
+//	//int arr[10] = { 0 };
+//	//int* p = arr;//数组名就是数组首元素的地址arr->&arr[0];
 //
+//	//for (int i = 0; i < 10; i++)
+//	//{
+//	//	*(p + i) = i + 1;
+//	//}
+//
+//	//1~10
+//	int arr[10] = { 0 };
+//	char* p = arr;
+//	
 //	int i = 0;
 //	for (i = 0; i < 10; i++)
 //	{
-//		*(p + i) = i + 1;
+//		*p = i + 1;
+//		p++;
 //	}
-//
-//	//1~10
-//	//char* p = arr;
-//	
-//	//int i = 0;
-//	//for (i = 0; i < 10; i++)
-//	//{
-//	//	*p = i + 1;
-//	//	p++;
-//	//}
 //
 //	return 0;
 //}
-//
+
 
 //int main()
 //{
@@ -115,6 +117,7 @@ int main()
 //int* test()
 //{
 //	int num = 100;
+//	printf("%p\n", &num);
 //	return &num;
 //}
 //
@@ -122,6 +125,8 @@ int main()
 //{
 //	int* p = test();
 //	*p = 200;
+//	printf("%d\n", *p);
+//	printf("%p\n", p);
 //
 //	return 0;
 //}
@@ -143,10 +148,10 @@ int main()
 //int main()
 //{
 //	int a = 10;
-//	int* p = NULL;
+//	//int* p = NULL;
 //	//*p = 20;
 //
-//	//int* p = &a;
+//	int* p = &a;
 //
 //	if (p != NULL)
 //	{
@@ -168,6 +173,8 @@ int main()
 //
 //	return 0;
 //}
+
+
 //
 //#define N_VALUES 5
 //float values[N_VALUES];
@@ -179,12 +186,16 @@ int main()
 //	{
 //		*vp = 1;
 //	}
+//	for (int i = 0; i < N_VALUES; i++)
+//	{
+//		printf("%f\n", values[i]);
+//	}
 //	return 0;
 //}
 
 //int main()
 //{
-//	//两个指针相减的前提是：指针指向的同一块连续的空间
+//	//
 //	int arr[10] = {0};
 //	printf("%d\n", &arr[9] - &arr[0]);
 //	printf("%d\n", &arr[0] - &arr[9]);
@@ -195,13 +206,13 @@ int main()
 //
 //	return 0;
 //}
-//
+
 
 
 #include <string.h>
 
 //1. 计数器
-//int my_strlen(char* str)
+//int my_strlen1(char* str)
 //{
 //	int count = 0;
 //	while (*str)
@@ -211,22 +222,24 @@ int main()
 //	}
 //	return count;
 //}
-//2. 递归的版本
-
-//3. 指针-指针
-//int my_strlen(char* str)
+////2. 递归的版本
+//
+////3. 指针-指针
+//int my_strlen2(char* str)
 //{
 //	char* start = str;
 //	while (*str)
 //		str++;
 //	return str - start;
 //}
-//
+////
 //int main()
 //{
 //	char arr[] = "abc";
-//	int len = my_strlen(arr);
-//	printf("%d\n", len);
+//	int len1 = my_strlen1(arr);
+//	int len2 = my_strlen2(arr);
+//	printf("%d\n", len1);
+//	printf("%d\n", len2);
 //
 //	return 0;
 //}
@@ -238,17 +251,115 @@ int main()
 //	int* p = arr;
 //	int i = 0;
 //	int sz = sizeof(arr) / sizeof(arr[0]);
-//	/*for (i = 0; i < sz; i++)
-//	{
-//		printf("%d ", *p);
-//		p++;
-//	}*/
 //
 //	for (i = 0; i < sz; i++)
 //	{
-//		printf("%d ", *(p + i));
+//		printf("%d\n", *(p + i));
 //	}
 //
 //	return 0;
 //}
+
+
+
+
+
+// Part. II
+
+//int main()
+//{
+//	int a = 10;//
+//	int* p = &a;//p就是指针变量，一级指针变量
+//	int** pp = &p;//pp就二级指针
+//
+//	//*(*pp) = 200;
+//	**pp = 200;
+//	//*p = 20;
+//	printf("%d\n", a);
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 10;//
+//	int* p = &a;//p就是指针变量，一级指针变量
+//	int** pp = &p;//pp就二级指针
+//	int*** ppp = &pp;
+//	int**** pppp = &ppp;
+//
+//
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	//整型数组-存放整型的数组
+//	int arr[10];
+//	//字符数组-存放字符的数组
+//	char arr2[5];
+//	//指针数组-存放指针的数组
+//	int* arr3[5];//存放整型指针的数组
+//	char* arr4[6];//存放字符指针的数组
+//
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int c = 30;
+//	int d = 40;
+//	int e = 50;
+//
+//	int* arr3[5] = {&a, &b, &c, &d, &e};//存放整型指针的数组
+//	int i = 0;
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%d ", *(arr3[i]));
+//	}
+//
+//	return 0;
+//}
+
+//
+int main()
+{
+	//用一维数组模拟一个二维数组
+	int arr1[] = { 1,2,3,4,5 };
+	int arr2[] = { 2,3,4,5,6 };
+	int arr3[] = { 3,4,5,6,7 };
+	int arr4[] = { 4,5,6,7,8 };
+
+	int* arr[4] = {arr1, arr2, arr3, arr4};
+	//int i = 0;
+	//for (i = 0; i < 4; i++)
+	//{
+	//	int j = 0;
+	//	for (j = 0; j < 5; j++)
+	//	{
+	//		printf("%d ", *(*(arr+i)+j));
+	//	}
+	//	printf("\n");
+	//}
+
+	int i = 0;
+	for (i = 0; i < 4; i++)
+	{
+		int j = 0;
+		for (j = 0; j < 5; j++)
+		{
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+
 
