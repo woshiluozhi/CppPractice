@@ -84,28 +84,68 @@
 //	}
 //}
 
-void reverse(int* nums, int numsSize, int k)
+//void reverse(int* nums, int numsSize, int k)
+//{
+//	k %= numsSize;//防止k过大,循环多次
+//
+//	int tmp[numsSize];
+//
+//	int j = 0;
+//	for (int i = numsSize - k; i < numsSize; i++) //后k个拷贝
+//	{
+//		tmp[j] = nums[i];
+//		j++;
+//	}
+//
+//	for (int i = 0; i < numsSize - k; i++) //前n-k个拷贝
+//	{
+//		tmp[j] = nums[i];
+//		j++;
+//	}
+//
+//	for (int i = 0; i < numsSize; i++)//拷贝回去
+//	{
+//		nums[i] = tmp[i];
+//	}
+//
+//}
+
+
+//Rotate Array
+
+void swap(int* a, int* b)
 {
-	k %= numsSize;//防止k过大,循环多次
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
 
-	int tmp[numsSize];
+void reverse(int* nums, int start, int end)
+{
+    while (start < end)
+    {
+        swap(nums + start, nums + end);
+        start++;
+        end--;
+    }
+}
 
-	int j = 0;
-	for (int i = numsSize - k; i < numsSize; i++) //后k个拷贝
-	{
-		tmp[j] = nums[i];
-		j++;
-	}
+void rotate(int* nums, int numsSize, int k) {
+    k %= numsSize;
+    reverse(nums, 0, numsSize - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, numsSize - 1);
+}
 
-	for (int i = 0; i < numsSize - k; i++) //前n-k个拷贝
-	{
-		tmp[j] = nums[i];
-		j++;
-	}
 
-	for (int i = 0; i < numsSize; i++)//拷贝回去
-	{
-		nums[i] = tmp[i];
-	}
 
+//Missing Number
+
+int missingNumber(int* nums, int numsSize) {
+    int sum = 0;
+    for (int i = 0; i < numsSize; i++)
+    {
+        sum += nums[i];
+    }
+    return numsSize * (numsSize + 1) / 2 - sum;
 }
