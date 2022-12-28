@@ -147,3 +147,37 @@ int main() {
     }
     return 0;
 }
+
+
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* runningSum(int* nums, int numsSize, int* returnSize) {
+    *returnSize = numsSize;
+    for (int i = 1; i < numsSize; i++)
+    {
+        nums[i] += nums[i - 1];
+    }
+    return nums;
+
+}
+
+
+int searchInsert(int* nums, int numsSize, int target) {
+    int left = 0, right = numsSize - 1, ans = numsSize;
+
+    while (left <= right)
+    {
+        int mid = ((right - left) >> 1) + left;
+        if (target <= nums[mid])
+        {
+            ans = mid;
+            right = mid - 1;
+        }
+        else
+        {
+            left = mid + 1;
+        }
+    }
+    return ans;
+}
