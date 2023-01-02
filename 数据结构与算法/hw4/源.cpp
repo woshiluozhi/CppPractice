@@ -181,3 +181,23 @@ int searchInsert(int* nums, int numsSize, int target) {
     }
     return ans;
 }
+
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param n int整型 最大位数
+ * @return int整型一维数组
+ * @return int* returnSize 返回数组行数
+ */
+int* printNumbers(int n, int* returnSize) {
+    // write code here
+    *returnSize = pow(10, n) - 1;
+    int* arr = (int*)malloc(sizeof(int) * (*returnSize));
+    for (int i = 0; i < *returnSize; i++)
+    {
+        arr[i] = i + 1;
+    }
+    return arr;
+}
