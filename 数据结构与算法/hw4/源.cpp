@@ -242,4 +242,4 @@ int main()
 		return 0;
 }
 
-//linux
+//linuxcpp
