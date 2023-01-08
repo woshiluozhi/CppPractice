@@ -1,0 +1,1000 @@
+   19  ls
+   20  touch myshell.sh
+   21  ll
+   22  rm myshell.sh 
+   23  ls
+   24  clear
+   25  ll
+   26  g++ -o mycpp mycpp.cc 
+   27  ls
+   28  ./mycpp 
+   29  ls
+   30  vim Makefile 
+   31  ll
+   32  vim myexec.c 
+   33  make
+   34  clear
+   35  ll
+   36  ./myexec 
+   37  touch mypy.py
+   38  vim mypy.py 
+   39  python
+   40  clear
+   41  ll
+   42  vim mypy.py 
+   43  ls
+   44  ll
+   45  python mypy.py 
+   46  chmod +x mypy.py 
+   47  ll
+   48  clear
+   49  ll
+   50  ./mypy.py 
+   51  ll
+   52  vim myexec.c 
+   53  ls
+   54  clear
+   55  ll
+   56  make
+   57  ls
+   58  ./myexec 
+   59  ls
+   60  clear
+   61  ll
+   62  touch myshell.sh
+   63  ll
+   64  vim myshell.sh 
+   65  ls
+   66  clear
+   67  ll
+   68  bash myshell.sh 
+   69  chmod +x myshell.sh 
+   70  ll
+   71  ./myshell.sh 
+   72  ls
+   73  vim myexec.c 
+   74  make
+   75  ls
+   76  clear
+   77  ll
+   78  ./myexec 
+   79  ls
+   80  clear
+   81  ll
+   82  ls
+   83  clear
+   84  ll
+   85  ls
+   86  clear
+   87  ll
+   88  man execl
+   89  ls
+   90  ll
+   91  clear
+   92  ll
+   93  mkdir other
+   94  ll
+   95  mv  *.py other/
+   96  mv *.sh other/
+   97  mv *.cc other
+   98  ll
+   99  clear
+  100  ll
+  101  rm mycpp 
+  102  ll
+  103  make clea
+  104  mv other ..
+  105  ls
+  106  clear
+  107  ll
+  108  make clean
+  109  ls
+  110  ll
+  111  make
+  112  ll
+  113  vim mybin.c 
+  114  echo $BASH
+  115  vim mybin.c 
+  116  make
+  117  ls
+  118  clear
+  119  ll
+  120  ./mybin 
+  121  echo $BASH
+  122  vim mybin.c 
+  123  make
+  124  ls
+  125  clear
+  126  ll
+  127  ./mybin 
+  128  ll
+  129  clear
+  130  ll
+  131  vim myexec.c 
+  132  make
+  133  ls
+  134  ./myexec 
+  135  ls
+  136  vim myexec.c 
+  137  make
+  138  ls
+  139  clear
+  140  ll
+  141  ./myexec 
+  142  ls
+  143  vim myexec.c 
+  144  make
+  145  man environ
+  146  vim myexec.c 
+  147  man environ
+  148  ll
+  149  vim myexec.c 
+  150  make
+  151  ls
+  152  clear
+  153  ll
+  154  ./myexec 
+  155  ls
+  156  vim myexec.c 
+  157  make
+  158  ls
+  159  clear
+  160  ll
+  161  ./myexec 
+  162  ls
+  163  clear
+  164  ll
+  165  vim myexec.c 
+  166  ll
+  167  clear
+  168  ll
+  169  man execl
+  170  man execve
+  171  man execl
+  172  ls
+  173  clear
+  174  ll
+  175  vim myexec.c 
+  176  ls
+  177  clear
+  178  make
+  179  ls
+  180  ./myexec ls -a -l
+  181  ll
+  182  vim myexec.c 
+  183  make
+  184  ls
+  185  clear
+  186  ./myexec ls -a -l
+  187  ./myexec ls -a -l --color=auto
+  188  ./myexec top
+  189  ./myexec pwd
+  190  clear
+  191  ll
+  192  ls
+  193  make clean
+  194  ll
+  195  cd ..
+  196  ls
+  197  clear
+  198  ll
+  199  mkdir myshell
+  200  ll
+  201  cd myshell/
+  202  ll
+  203  ls
+  204  clear
+  205  ll
+  206  touch myshell.c
+  207  ll
+  208  cp ../Makefile .
+  209  ll
+  210  vim Makefile 
+  211  ls
+  212  vim myshell.c 
+  213  ls
+  214  clear
+  215  ll
+  216  ls
+  217  vim myshell.c 
+  218  make
+  219  ls
+  220  ./myshell 
+  221  ll
+  222  vim myshell.c 
+  223  make
+  224  ls
+  225  clear
+  226  ./myshell 
+  227  ll
+  228  vim myshell.c 
+  229  man fgets
+  230  ls
+  231  vim myshell.c 
+  232  make
+  233  ls
+  234  ./myshell 
+  235  ls
+  236  vim myshell.c 
+  237  make
+  238  ls
+  239  clear
+  240  ll
+  241  ./myshell 
+  242  ls
+  243  vim myshell.c 
+  244  make
+  245  ls
+  246  clear
+  247  ls
+  248  ./myshell 
+  249  ls
+  250  vim myshell.c 
+  251  make
+  252  ls
+  253  ./myshell 
+  254  ls
+  255  vim myshell.c 
+  256  man strtok
+  257  ls
+  258  clear
+  259  ll
+  260  vim myshell.c 
+  261  make
+  262  ls
+  263  ./myshell 
+  264  ls
+  265  vim Makefile 
+  266  make
+  267  make clean
+  268  mkae
+  269  make
+  270  ls
+  271  clear
+  272  ll
+  273  ./myshell 
+  274  ls
+  275  clear
+  276  ll
+  277  vim myshell.c 
+  278  vim Makefile 
+  279  mkae
+  280  make
+  281  ./myshell 
+  282  ll
+  283  vim myshell.c 
+  284  ls
+  285  clear
+  286  make
+  287  ls
+  288  ./myshell 
+  289  ll
+  290  vim myshell.c 
+  291  ls 
+  292  /usr/binls
+  293  /usr/bin/ls
+  294  ls
+  295  clear
+  296  ll
+  297  vim myshell.c 
+  298  make
+  299  ls
+  300  ./myshell 
+  301  ls
+  302  clear
+  303  make clean
+  304  ll
+  305  ls -al -l
+  306  ls
+  307  vim myshell.c 
+  308  ls
+  309  clear
+  310  ll
+  311  ls
+  312  cd ..
+  313  ls
+  314  clear
+  315  ll
+  316  cd ..
+  317  ls
+  318  git pull
+  319  ls
+  320  clear
+  321  ll
+  322  git add .
+  323  git commit -m "进程替换代码"
+  324  git push
+  325  ll
+  326  clear
+  327  ll
+  328  ls
+  329  ll
+  330  cd 106/
+  331  ll
+  332  clear
+  333  ll
+  334  c 106-code-blackboard-writing/
+  335  ll
+  336  cd 106-code-blackboard-writing/
+  337  ll
+  338  cd lesson16/
+  339  ll
+  340  ls
+  341  clear
+  342  l
+  343  ll
+  344  vim myshell/
+  345  ll
+  346  cd myshell/
+  347  ll
+  348  clear
+  349  ll
+  350  vim myshell.c 
+  351  ls
+  352  clear
+  353  ll
+  354  make
+  355  ls
+  356  ./myshell 
+  357  ll
+  358  vim myshell.c 
+  359  make
+  360  ls
+  361  clear
+  362  ll
+  363  ./myshell 
+  364  ls
+  365  ll
+  366  pwd
+  367  cd ..
+  368  pwd
+  369  cd -
+  370  clar
+  371  clear
+  372  ll
+  373  cd ..
+  374  ls
+  375  cd ..
+  376  ls
+  377  ll
+  378  clear
+  379  ll
+  380  mkdir lesson17
+  381  ll
+  382  cd lesson17/
+  383  ll
+  384  clear
+  385  ll
+  386  ls
+  387  touch myproc.c
+  388  ll
+  389  vim myproc.c 
+  390  ll
+  391  gcc myproc.c -o myproc
+  392  ll
+  393  ./myproc 
+  394  ls
+  395  clear
+  396  ll
+  397  pwd
+  398  man chdir
+  399  ls
+  400  clear
+  401  make clean
+  402  ll
+  403  rm myproc
+  404  ls
+  405  clear
+  406  ll
+  407  vim myproc.c 
+  408  ls
+  409  clear
+  410  make
+  411  gcc myproc.c -o myproc
+  412  ls
+  413  clear
+  414  ./myproc 
+  415  cd "106/106-code-blackboard-writing/lesson17"
+  416  ls
+  417  clear
+  418  ps ajx | grep myproc
+  419  clear
+  420  ls /proc/
+  421  clear
+  422  ll
+  423  ls /proc/25828
+  424  ls /proc/25828 -al
+  425  clear
+  426  ls /proc/26257
+  427  ls /proc/26257 -al
+  428  ls
+  429  clear
+  430  ll
+  431  vim myproc.c 
+  432  cd ..
+  433  ls
+  434  cd lesson16/
+  435  ll
+  436  clear
+  437  ll
+  438  cd myshell/
+  439  ll
+  440  vim myshell.c 
+  441  ls
+  442  clear
+  443  ll
+  444  make
+  445  ls
+  446  clear
+  447  ll
+  448  ./myshell 
+  449  ll
+  450  vim  myshell.c 
+  451  clear
+  452  ll
+  453  echo $?
+  454  ls
+  455  clear
+  456  ll
+  457  vim myshell.c 
+  458  make
+  459  ls
+  460  clear
+  461  ./myshell 
+  462  ls
+  463  vim myshell.c 
+  464  make
+  465  ls
+  466  clear
+  467  ./myshell 
+  468  ls
+  469  clear
+  470  make clean
+  471  ll
+  472  vim myshell.c 
+  473  ls
+  474  clear
+  475  ll
+  476  ls
+  477  ll
+  478  cd ..
+  479  ls
+  480  cd ..
+  481  ls
+  482  cd lesson17/
+  483  ll
+  484  clear
+  485  ll
+  486  rm myproc
+  487  ll
+  488  mv myproc.c myfile.c
+  489  ll
+  490  ls > Makefile
+  491  ll
+  492  vim Makefile 
+  493  ll
+  494  vim myfile.c 
+  495  ls
+  496  ll
+  497  clear
+  498  ll
+  499  vim myfile.c 
+  500  ls
+  501  clear
+  502  ll
+  503  make
+  504  ll
+  505  ./myfile 
+  506  ll
+  507  ls
+  508  vim myfile.c 
+  509  mkae
+  510  make
+  511  clear
+  512  ll
+  513  ./myfile 
+  514  ll
+  515  cat log.txt 
+  516  ll
+  517  vim myfile.c 
+  518  make
+  519  ls
+  520  clear
+  521  ll
+  522  ./myfile 
+  523  cat log.txt 
+  524  ls
+  525  vim myfile.c 
+  526  makke
+  527  make
+  528  clear
+  529  ll
+  530  .//myfile 
+  531  ls
+  532  clear
+  533  make cleanf
+  534  ll
+  535  make clena
+  536  make clean
+  537  ll
+  538  vim myfile.c 
+  539  make
+  540  ls
+  541  clear
+  542  ll
+  543  ./myfile 
+  544  cat log.txt 
+  545  ./myfile 
+  546  cat log.txt 
+  547  ./myfile 
+  548  cat log.txt 
+  549  ls
+  550  clear
+  551  make clean
+  552  ll
+  553  vim myfile.c 
+  554  ls
+  555  clear
+  556  ll
+  557  make
+  558  ls
+  559  ll
+  560  cat log.txt 
+  561  ./myfile 
+  562  ll
+  563  cat log.txt 
+  564  ll
+  565  clear
+  566  ll
+  567  vim myfile.c 
+  568  ll
+  569  umask
+  570  ll
+  571  vim myfile.c 
+  572  clear
+  573  ll
+  574  ls
+  575  clear
+  576  ll
+  577  man 2 open
+  578  ls
+  579  clear
+  580  ll
+  581  make clean
+  582  ll
+  583  vim myfile.c 
+  584  ls
+  585  clear
+  586  make
+  587  ls
+  588  ./myfile 
+  589  ls
+  590  vim myfile.c 
+  591  make
+  592  ls
+  593  clear
+  594  ./myfile 
+  595  ls
+  596  clear
+  597  ll
+  598  make clean
+  599  ll
+  600  vim myfile.c 
+  601  man  2 open
+  602  ll
+  603  vim myfile.c 
+  604  ls
+  605  rm log.txt 
+  606  ll
+  607  vim myfile.c 
+  608  man 2 open
+  609  ls
+  610  clear
+  611  ll
+  612  man 3 close
+  613  ll
+  614  vim myfile.c 
+  615  ls
+  616  clear
+  617  ll
+  618  make
+  619  ll
+  620  ./myfile 
+  621  ll
+  622  vim myfile.c 
+  623  make
+  624  ./myfile 
+  625  ll
+  626  man 2 mkdir
+  627  clear
+  628  ll
+  629  rm log.txt 
+  630  ll
+  631  vim myfile.c 
+  632  man 2 open
+  633  ll
+  634  vim myfile.c 
+  635  ls
+  636  clear
+  637  ll
+  638  make
+  639  ls
+  640  ll
+  641  ./myfile 
+  642  ll
+  643  ls
+  644  clear
+  645  ll
+  646  umask
+  647  rm log.txt 
+  648  ls
+  649  ll
+  650  man 2 umask
+  651  ll
+  652  vim myfile.c 
+  653  make
+  654  clear
+  655  ll
+  656  ./myfile 
+  657  ll
+  658  umask
+  659  ll
+  660  make clean
+  661  ll
+  662  vim myfile.c 
+  663  man 2 write
+  664  ll
+  665  vim myfile.c 
+  666  make
+  667  clear
+  668  ll
+  669  ./myfile 
+  670  ll
+  671  vim myfile.c 
+  672  ls
+  673  clear
+  674  ll
+  675  mke
+  676  make
+  677  ll
+  678  rm log.txt 
+  679  ll
+  680  clear
+  681  ll
+  682  ./myfile 
+  683  ll
+  684  cat log.txt 
+  685  vim log.txt 
+  686  ll
+  687  clear
+  688  ll
+  689  vim myfile.c 
+  690  make
+  691  ls
+  692  clear
+  693  ./myfile 
+  694  ll
+  695  cat log.txt 
+  696  ls
+  697  vim log.txt 
+  698  rm log.txt 
+  699  ll
+  700  ./myfile 
+  701  vim log.txt 
+  702  ll
+  703  vim myfile.c 
+  704  clear
+  705  make
+  706  clear
+  707  cat log.txt 
+  708  ./myfile 
+  709  cat log.txt 
+  710  ll
+  711  vim myfile.c 
+  712  ls
+  713  clear
+  714  ll
+  715  make
+  716  ls
+  717  ./myfile 
+  718  cat log.txt 
+  719  vim myfile.c 
+  720  make
+  721  ./myfile 
+  722  cat log.txt 
+  723  ll
+  724  vim myfile.c 
+  725  make
+  726  ls
+  727  clear
+  728  ll
+  729  rm log.txt 
+  730  ll
+  731  clear
+  732  ll
+  733  ./myfile 
+  734  ll
+  735  cat log.txt 
+  736  ./myfile 
+  737  cat log.txt 
+  738  ll
+  739  clear
+  740  ll
+  741  vim myfile.c 
+  742  make
+  743  ls
+  744  ./myfile 
+  745  man  3 fseek
+  746  man 2 lseek
+  747  ll
+  748  clear
+  749  ll
+  750  make clean
+  751  ll
+  752  vim myfile.c 
+  753  ls
+  754  clear
+  755  make
+  756  ls
+  757  rm 2 read
+  758  rm -rf 2 read
+  759  ll
+  760  rm 2\ read
+  761  ll
+  762  clear
+  763  ll
+  764  rm log.txt 
+  765  ll
+  766  make clean
+  767  ls
+  768  clear
+  769  ll
+  770  make
+  771  ls
+  772  ./myfile 
+  773  ll
+  774  vim myfile.c 
+  775  ls
+  776  clear
+  777  ll
+  778  man stdin
+  779  ll
+  780  vim myfile.c 
+  781  ls
+  782  clear
+  783  ll
+  784  rm *.txt*
+  785  ll
+  786  make clean
+  787  ls
+  788  clear
+  789  ll
+  790  make
+  791  ls
+  792  ./myfile 
+  793  ls
+  794  clear
+  795  make clean
+  796  ll
+  797  cd ..
+  798  ls
+  799  clear
+  800  ll
+  801  ls
+  802  clear
+  803  git pull
+  804  ls
+  805  claer
+  806  ll
+  807  git status
+  808  git add .
+  809  git commit -m "文件描述符代码"
+  810  git push
+  811  ls
+  812  clear
+  813  ll
+  814  git status
+  815  clar
+  816  git log
+  817  ls
+  818  clear
+  819  ll
+  820  clear
+  821  ll
+  822  cd 107/
+  823  ll
+  824  clear
+  825  ll
+  826  mkdir lesson4
+  827  ll
+  828  cd lesson4/
+  829  ls
+  830  clear
+  831  ll
+  832  ls
+  833  pwd
+  834  mkdir temp
+  835  ll
+  836  touch temp/test.c
+  837  touch temp/test.cpp
+  838  touch temp/test.py
+  839  touch temp/test.sh
+  840  touch temp/test.txt
+  841  tree .
+  842  mkdir temp/dir
+  843  ls
+  844  ls -l temp/
+  845  ls
+  846  clear
+  847  ll
+  848  tree temp/
+  849  echo "you can see me" > temp/test.txt
+  850  ls temp/
+  851  ls temp/ -l
+  852  cat temp/test.txt
+  853  clear
+  854  ll
+  855  tree .
+  856  clear
+  857  ll
+  858  zip temp.zip temp
+  859  ls
+  860  ll
+  861  mv temp ..
+  862  ll
+  863  ls ../
+  864  ls
+  865  clear
+  866  ll
+  867  unzip temp.zip 
+  868  ll
+  869  tree temp
+  870  ls temp/
+  871  rm * -rf
+  872  touch test.c
+  873  touch test1.c
+  874  ll
+  875  rm *.c
+  876  ll
+  877  ls
+  878  clear
+  879  ll
+  880  mv ../temp .
+  881  ls
+  882  tree temp/
+  883  clear
+  884  ll
+  885  zip -r temp.zip temp
+  886  ls
+  887  ll
+  888  rm temp -rf
+  889  ll
+  890  unzip temp.zip 
+  891  ls
+  892  clear
+  893  ll
+  894  tree temp
+  895  ll temp/
+  896  cat temp/test.txt
+  897  ls
+  898  clear
+  899  ll
+  900  pwd
+  901  ls /home/whb
+  902  unzip temp.zip -d ~
+  903  ls
+  904  ls ~
+  905  tree ~/temp
+  906  ls ~/temp
+  907  ls ~/temp -al
+  908  cat ~/temp/test.txt
+  909  clear
+  910  l
+  911  ls
+  912  rm ~/temp 
+  913  rm ~/temp -rf
+  914  ll
+  915  rm temp.zip 
+  916  ll
+  917  clear
+  918  ll
+  919  ls
+  920  clear
+  921  ll
+  922  tar -czf temp.tgz temp
+  923  ll
+  924  rm -rf temp
+  925  ll
+  926  tar -xzf temp.tgz
+  927  ll
+  928  tree temp
+  929  ls temp
+  930  ls temp -l
+  931  cat temp/test.txt
+  932  ls
+  933  clear
+  934  ll
+  935  rm temp -rf
+  936  ll
+  937  tar -xtzf temp.tgz 
+  938  tar -xtf temp.tgz 
+  939  tar -xt temp.tgz 
+  940  tar -t temp.tgz 
+  941  tar -ztvf temp.tgz 
+  942  ll
+  943  tar -ztf temp.tgz 
+  944  clear
+  945  ll
+  946  tar xzf temp.tgz 
+  947  ll
+  948  tree temp
+  949  clear
+  950  ll
+  951  rm temp -rf
+  952  ll
+  953  ls /home/whb
+  954  tar xzf temp.tgz -C ~
+  955  ls /home/whb
+  956  ls /home/whb/temp
+  957  ls /home/whb/temp -l
+  958  clear
+  959  ll
+  960  ls
+  961  clear
+  962  ll
+  963  ls
+  964  clear
+  965  ll
+  966  bc
+  967  clear
+  968  ll
+  969  ls '
+  970  ls -a -l -n -i 
+  971  clear
+  972  ls alsfd
+  973  ls '
+  974  d
+  975  d
+  976  d
+  977  d
+  978  dd
+  979  dffa
+  980  asdf
+  981  asdf
+  982  asdf
+  983  asdf
+  984  ls
+  985  clear
+  986  ll
+  987  bc
+  988  echo "1+2+3+4" | bc 
+  989  clear
+  990  ll
+  991  ls
+  992  clear
+  993  ll
+  994  uname
+  995  uname -a
+  996  uname -r
+  997  ls
+  998  clear
+  999  ll
+ 1000  cat /etc/redhat-release 
+ 1001  ll
+ 1002  cd 107/
+ 1003  ll
+ 1004  clear
+ 1005  ll
+ 1006  cd lesson4/
+ 1007  ls
+ 1008  clear
+ 1009  ll
+ 1010  clear
+ 1011  ll
+ 1012  ls
+ 1013  clear
+ 1014  cat /etc/redhat-release 
+ 1015  history 
+ 1016  clear
+ 1017  ll
+ 1018  history > cmd.txt
