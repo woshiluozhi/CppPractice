@@ -216,6 +216,6 @@ int main()
 	int& ret = Add(1, 2);
 	cout << "Add(1, 2) is " << ret << endl;
 	Add(3, 4);
-	cout << "Add(1, 2) is " << ret << endl;
+	cout << "Add(1, 2) is  " << ret << endl;
 	return 0;
 }
