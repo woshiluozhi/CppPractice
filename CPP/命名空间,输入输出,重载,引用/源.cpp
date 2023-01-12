@@ -188,19 +188,34 @@ void TestRef()
 	const int& a = 10;
 }
 
-void Swap(int& left, int& right)
+//void Swap(int& left, int& right)
+//{
+//	int temp = left;
+//	left = right;
+//	right = temp;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int& ra = a;
+//	int& rb = b;
+//	Swap(ra, rb);
+//	cout << a << " " << b << endl;
+//	return 0;
+//}
+
+int& Add(int a, int b)
 {
-	int temp = left;
-	left = right;
-	right = temp;
+	int c = a + b;
+	return c;
 }
+
 int main()
 {
-	int a = 10;
-	int b = 20;
-	int& ra = a;
-	int& rb = b;
-	Swap(ra, rb);
-	cout << a << " " << b << endl;
+	int& ret = Add(1, 2);
+	cout << "Add(1, 2) is " << ret << endl;
+	Add(3, 4);
+	cout << "Add(1, 2) is " << ret << endl;
 	return 0;
 }
