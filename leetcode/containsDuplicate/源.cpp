@@ -24,7 +24,7 @@ int main()
     int numsSize = sizeof(arr) / sizeof(arr[0]);
     for (int i = 0; i < numsSize; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%d  ", arr[i]);
     }
     printf("\n");
     printf("numsSize = %d\n", numsSize);
