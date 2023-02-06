@@ -327,16 +327,15 @@ using namespace std;
 //}
 
 //inline
-
+//
 //// C++推荐
 //// const和enum替代宏常量
 //// inline去替代宏函数
-
+//
 //// 宏缺点：
 //// 1、不能调试
 //// 2、没有类型安全的检查
-//// 3、有些场景下非常复杂,容易出错，不容易掌握
-// 要求实现ADD宏函数,加括号防止变量与其他未知变量先进行计算
+//// 3、有些场景下非常复杂,容易出错，不容易掌握要求实现ADD宏函数,加括号防止变量与其他未知变量先进行计算
 //#define ADD(x, y) ((x) + (y))
 //
 //int main()
@@ -344,7 +343,7 @@ using namespace std;
 //	cout << ADD(1, 2) << endl;
 //	return 0;
 //}
-
+//
 //inline int Add(int x, int y)
 //{
 //	return x + y;
@@ -357,7 +356,7 @@ using namespace std;
 //	return 0;
 //}
 
-////auto (C++11)
+//auto (C++11)
 //int TestAuto()
 //{
 //	return 10;
@@ -375,23 +374,23 @@ using namespace std;
 //	return 0;
 //}
 
-////for 基于范围的for循环(C++11) 难用
-//void TestFor()
-//{
-//	int arr[] = { 1, 2, 3, 4, 5 };
-//	for (auto& a : arr)
-//	{
-//		a = a + 10;
-//	}
-//	for (auto a : arr)
-//	{
-//		cout << a << " ";
-//	}
-//}
-//int main()
-//{
-//	TestFor();
-//	return 0;
-//}
+//for 基于范围的for循环(C++11) 难用
+void TestFor()
+{
+	int arr[] = { 1, 2, 3, 4, 5 };
+	for (auto& a : arr)
+	{
+		a = a + 10;
+	}
+	for (auto a : arr)
+	{
+		cout << a << " ";
+	}
+}
+int main()
+{
+	TestFor();
+	return 0;
+}
 
 
